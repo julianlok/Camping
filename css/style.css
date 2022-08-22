@@ -1,0 +1,275 @@
+/* dau *: chon tat ca cac the HTML  
+* Global: dung cho toan bo website*/
+* {
+    /* reset margin, padding mac dinh cua trinh duyet */
+    margin: 0;
+    padding: 0;
+    /* box-sizing giu nguyen kich thuoc width  */
+    box-sizing: border-box; 
+}
+
+body {  
+    background-color: #faf4f2;
+} 
+
+.clear{
+    clear: both;
+}
+
+/* Header */
+.header {
+    /* ten mau: co 3 loai
+    1. ten tieng anh (white, black)
+    2. hex (#)
+    3. rgb(0,0,0) */
+    background-color: #f8e1db;
+    /*        t,b  l,r        */
+    padding: 10px 60px;
+}
+
+.header ul{
+    /* b1: xoa dau tron den */
+    list-style: none;
+    margin-top: 10px;
+}
+
+.header a {
+    /* b2:xoa duong gach chan  */
+    text-decoration: none;
+    color: black;
+    margin-right: 35px;
+}
+
+.header li {
+    /* b3: chuyen li tu block sang inline ==> cac li se chung 1 hang */
+    display: inline;
+    /* box model: cach the hien cua trinh duyet doi voi the html, giup chung ta phan biet duoc cac vung (margin, padding, content, border) trong pham vi cua the */
+    /* margin: khoang cach tu the nay toi the ke ben */
+    margin: 10px 0 10px;
+    /* padding: khoang cach tu content den border cua the */
+    /* padding: 15px; */
+    /* border: 3px solid red; */
+}
+
+/* Header */
+
+/* Carousel */
+.carousel{
+    background-image: url(../images/BG.png);
+    /* do the carousel dang bi thieu height tren trinh duyet ==> them chieu cao */
+    height: 600px;
+    /* chinh kich thuoc cua hinh nen: cover la phu het khung cua the carousel */
+    background-size: cover;
+    /* thay doi vi tri hien thi mac dinh cua trinh duyet top,left */
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Carousel */
+
+/* Activities */
+/* display: inline ==> chi ap dung cho noi dung don gian (chua 1 con, hoac 1 dong chu ngan) */
+/* float: giup sap xep cac khoi noi dung ho tro cho moi trinh duyet, nhuoc diem la kho su dung */
+
+.activities{
+    margin-top: 80px;
+    text-align: center;
+}
+
+.activities__title{
+    color: #8d8d8d;
+}
+
+.activities__content{
+ margin-top: 30px;
+}
+
+.activities__item{
+    float: left;
+    /* kich thuoc toi da man hinh cua trinh duyet la 100% */
+    width: 25%;
+    /* width:100%, neu tran trinh duyet se lam rot hang kich thuoc cua 1 the item (width) = content + padding + border ==> (content 25% +20px) x4 > 100% */
+    /* border: 1px solid red; */
+    padding: 15px;
+}
+
+.activities__background{
+    padding: 40px;
+    background-color: white;
+    border-radius: 20px;
+    line-height: 1.8;
+}
+
+.activities__image{
+    position: relative;
+}
+
+.activities__image img{
+    width: 100%; 
+    border-radius: 20px;
+}
+
+.activities__info p{
+    margin:10px;
+    color: #8d8d8d;
+}
+
+.activities__icon{
+    display: block;
+    height: 40px;
+    width: 40px;
+    background-color:rgb(255, 255, 255,0.7);
+    border-radius: 13px;
+    line-height: 40px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.activities__icon i{
+    color: #e86f51;
+    font-size: 16px;
+}
+
+
+.activities__info button{
+    margin-top: 20px;
+    padding: 10px 50px;
+    border: 1px solid #e8e8e8;
+    border-radius: 20px;
+    background-color: #e8e8e8;
+    color: #8d8d8d;
+    font-size: 14px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.activities__info button:hover{
+    cursor: pointer;
+    background-color: #8d8d8d;
+    color: #e8e8e8;
+}
+
+.activities__viewall button{
+    margin-top: 20px;
+    padding: 12px 70px;
+    color: #E86F51;
+    background-color: transparent;
+    border: 1px solid #E86F51;
+    border-radius: 20px;
+}
+
+.activities__viewall button:hover{
+    background-color: #e86f51;
+    color: white;
+    cursor: pointer;
+}
+
+/* Activities */
+
+/* Contact */
+.contact{
+    background-color: #F8E1DB;
+    margin-top: 80px;
+    margin-bottom: 100px;
+    border-radius: 0 20px 20px 0;   
+}
+
+.contact__left,
+.contact__right{
+    float: left;
+    width: 50%;
+    padding: 20px 50px;
+}
+
+.contact__left{
+    background-image: url(../images/mask.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.contact__right{
+    padding-top: 80px;
+    color: #8E8D8D;
+}
+
+.contact__right p{
+    margin: 10px 0 30px 0;
+}
+
+.contact__right h3{
+    margin-bottom: 20px;
+}
+
+.contact__download,
+.contact__follow{
+    float: left;
+    width: 50%;
+}
+
+.contact__download img:hover{
+    cursor: pointer;
+}
+
+.contact__follow{
+    margin-left: -10px;
+}
+
+.contact__follow i{
+    color: #E86F51;
+    font-size: 25px;
+    margin-right: 10px;
+}
+
+.contact__follow i:hover{
+    cursor: pointer;
+}
+
+/* Contact */
+
+/* Footer */
+
+.footer{
+    background-color:  #f8e1db;;
+    border-radius: 100px 100px 0 0;
+    color: #423d3b;
+    padding: 100px 30px 60px 30px;
+}
+
+.footer h3{
+    margin-bottom: 30px;
+}
+
+.footer__about{
+    float: left;
+    width: 40%;
+    padding: 0px 20px;
+    line-height: 1.8;
+}
+
+.footer__list{
+    float: left;
+    width: 60%;
+    padding: 0 20px;
+}
+
+.footer__nav{
+    float: left;
+    width: 33.33%;
+    line-height: 1.8;
+}
+
+.footer__nav ul{
+    list-style: none;
+}
+
+.footer__nav a{
+    color:#423d3b;
+    text-decoration: none;
+}
+
+.footer__copyright{
+    text-align: center;
+    padding-top: 30px;
+}
+
+/* Footer */
